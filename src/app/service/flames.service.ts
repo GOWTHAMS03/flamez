@@ -31,11 +31,11 @@ export class FlamesService {
    let secondLarge:string;
 
    if(requestDto.boyName.length <= requestDto.girlName.length ){
-    firstLarge = requestDto.boyName;
-    secondLarge = requestDto.girlName;
+    firstLarge = requestDto.boyName.toLowerCase();
+    secondLarge = requestDto.girlName.toLowerCase();
    }else{
-    firstLarge = requestDto.girlName;
-    secondLarge = requestDto.boyName;
+    firstLarge = requestDto.girlName.toLowerCase();
+    secondLarge = requestDto.boyName.toLowerCase();
    }
 
    let firstArray : string[] = firstLarge.split('');
